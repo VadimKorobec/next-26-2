@@ -1,9 +1,5 @@
 const MealsPage = () => {
-  return (
-    <main>
-      <h1>Meals Page</h1>
-    </main>
-  );
+  return <h1>Meals Page</h1>;
 };
 
 export default MealsPage;

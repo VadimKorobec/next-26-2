@@ -1,9 +1,5 @@
-const SharePage = () => {
-  return (
-    <main>
-      <h1>Share Page</h1>
-    </main>
-  );
+const ShareMealPage = () => {
+  return <h1>Share Meal</h1>;
 };
 
-export default SharePage;
+export default ShareMealPage;
