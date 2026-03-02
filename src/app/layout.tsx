@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import MainHeader from "@/components/MainHeader/MainHeader";
-import MainHeaderBackground from "@/components/MainHeaderBackground/MainHeaderBackground";
 
 import "./globals.css";
 
@@ -17,7 +16,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <MainHeaderBackground/>
         <MainHeader />
         {children}
       </body>
