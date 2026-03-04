@@ -21,7 +21,7 @@ const MainHeader = () => {
               <Link href="/meals">Browse Meals</Link>
             </li>
             <li>
-              <Link href="/comminity">Foodies Comminity</Link>
+              <Link href="/community">Foodies Comminity</Link>
             </li>
           </ul>
         </nav>
