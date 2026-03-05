@@ -43,6 +43,7 @@ const ImageSlideshow = () => {
           src={image.image}
           className={index === currentImageIndex ? styles.active : ""}
           alt={image.alt}
+          loading="eager"
         />
       ))}
     </div>
