@@ -4,4 +4,5 @@ export type Meal = {
     image: string;
     summary: string;
     creator: string;
+    slug: string;
 };

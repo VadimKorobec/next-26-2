@@ -6,12 +6,10 @@ import { Meal } from "@/types/meal";
 
 interface MealItemProps {
   meal: Meal;
-  params: Promise<{ slug: string }>;
 }
 
-const MealItem = async ({ meal, params }: MealItemProps) => {
-  const { image, title, creator, summary } = meal;
-  const { slug } = await params;
+const MealItem = async ({ meal }: MealItemProps) => {
+  const { image, title, creator, summary, slug } = meal;
 
   return (
     <article className={styles.meal}>
