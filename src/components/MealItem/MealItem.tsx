@@ -8,7 +8,7 @@ interface MealItemProps {
   meal: Meal;
 }
 
-const MealItem = async ({ meal }: MealItemProps) => {
+const MealItem = ({ meal }: MealItemProps) => {
   const { image, title, creator, summary, slug } = meal;
 
   return (
