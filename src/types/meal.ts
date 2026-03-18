@@ -1,10 +1,10 @@
 export type Meal = {
-    creator: string;
-    creator_email: string;
-    id: number;
-    image: string;
-    instructions: string;
-    slug: string;
-    summary: string;
-    title: string;
+  creator: string;
+  creator_email: string;
+  id?: number;
+  image: string;
+  instructions: string;
+  slug?: string;
+  summary: string;
+  title: string;
 };
