@@ -1,3 +1,5 @@
+import { useActionState } from "react";
+
 import ImagePicker from "@/components/ImagePicker/ImagePicker";
 import MealButtonSubmit from "@/components/MealButtonSubmit/MealButtonSubmit";
 
@@ -6,6 +8,7 @@ import { shareMeal } from "../../../../lib/actions";
 import styles from "./page.module.css";
 
 const ShareMealPage = () => {
+  useActionState()
   return (
     <>
       <header className={styles.header}>
@@ -45,7 +48,7 @@ const ShareMealPage = () => {
           </p>
           <ImagePicker label="Your image" name="image" />
           <p className={styles.actions}>
-           <MealButtonSubmit/>
+            <MealButtonSubmit />
           </p>
         </form>
       </main>
