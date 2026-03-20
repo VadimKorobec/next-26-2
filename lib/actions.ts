@@ -1,6 +1,8 @@
 "use server";
 
 import { Meal } from "@/types/meal";
+import { saveMeal } from "./meals";
+import { redirect } from "next/navigation";
 
 export const shareMeal = async (formData: FormData) => {
   let meal: Meal;
@@ -14,7 +16,7 @@ export const shareMeal = async (formData: FormData) => {
       creator: formData.get("name") as string,
       creator_email: formData.get("email") as string,
     };
-
-    console.log(meal);
+    await saveMeal(meal);
+    redirect('/meals')
   }
 };
